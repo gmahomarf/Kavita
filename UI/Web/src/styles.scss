@@ -128,3 +128,10 @@ body {
   background-color: var(--setting-break-color);
   margin: 30px 0;
 }
+
+:root, :root .default {
+  --detail-title-color: black;
+    --detail-subtitle-color: darkgrey;
+    // --btn-outline-primary-text-color
+    --btn-fa-icon-color: var(--primary-color)
+}

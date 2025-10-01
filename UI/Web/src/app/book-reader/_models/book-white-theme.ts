@@ -96,22 +96,26 @@ export const BookWhiteTheme = `
   --drawer-pagination-border: 1px solid rgb(0 0 0 / 13%);
 }
 
+
 .reader-container {
-  color: black !important;
-  background-image: none !important;
-  background-color: white !important;
+  background-image: none;
+  background-color: white;
 }
 
 
+/*
 .book-content *:not(input), .book-content *:not(select), .book-content *:not(code), .book-content *:not(:link), .book-content *:not(.ngx-toastr) {
   color: black;
 }
+*/
 
+/*
 .book-content code {
   color: #e83e8c !important;
 }
+*/
 
-.book-content :link, .book-content a {
+/* .book-content :link, .book-content a {
   color: #8db2e5 !important;
 }
 
@@ -121,12 +125,12 @@ export const BookWhiteTheme = `
 }
 
 
-.book-content *:not(code), .book-content *:not(a) {
+.book-content {
   background-color: white;
   box-shadow: none;
   text-shadow: none;
   border-radius: unset;
-  color: #dcdcdc;
+  color: black;
 }
 
 .book-content :visited, .book-content :visited *, .book-content :visited *[class] {
@@ -139,6 +143,11 @@ export const BookWhiteTheme = `
 .btn-check:checked + .btn {
   color: white;
   background-color: var(--primary-color);
+} */
+
+kbd {
+  color: inherit !important;
+  /* background-color: inherit !important; */
 }
 
 `;

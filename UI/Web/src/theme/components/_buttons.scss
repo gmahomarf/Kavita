@@ -26,7 +26,7 @@
   --bs-btn-active-bg: var(--btn-outline-primary-hover-bg-color);
   --bs-btn-active-border-color: var(--btn-outline-primary-hover-border-color);
 
-  color: var(--btn-outline-primary-text-color);
+  color: var(--primary-color);
   background-color: var(--btn-outline-primary-bg-color);
   border-color: var(--btn-outline-primary-border-color);
 
@@ -214,6 +214,10 @@ button:disabled, .form-control:disabled, .form-control[readonly], .disabled, :di
 
 button i.fa {
   color: var(--btn-fa-icon-color);
+}
+
+button:hover i.fa {
+  color: white;
 }
 
 .btn-check:focus + .btn, .btn:focus {

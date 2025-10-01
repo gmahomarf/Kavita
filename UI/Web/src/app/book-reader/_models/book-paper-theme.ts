@@ -89,24 +89,28 @@ export const BookPaperTheme = `
   --drawer-pagination-horizontal-rule: inset 0 -1px 0 rgb(0 0 0 / 13%);
 
   /* Custom variables */
-  --theme-bg-color: #fff3c9;
+  --theme-bg-color: #F1E4D5;
 
   --bs-secondary-bg: darkgrey;
 }
 
 .reader-container {
-  color: black !important;
-  background-color: var(--theme-bg-color) !important;
-  background: url("assets/images/paper-bg.png");
+  color: black;
+  background-color: var(--theme-bg-color);
+  /*background: url("assets/images/paper-bg.png");*/
 }
 
+/*
 .book-content *:not(input), .book-content *:not(select), .book-content *:not(code), .book-content *:not(:link), .book-content *:not(.ngx-toastr) {
   color: var(--bs-body-color) !important;
 }
+*/
 
+/*
 .book-content code {
   color: #e83e8c !important;
 }
+*/
 
 // KDB has a reboot style so for lighter themes, this is needed
 .book-content kbd {
@@ -123,12 +127,13 @@ export const BookPaperTheme = `
 }
 
 
-.book-content *:not(code), .book-content *:not(a), .book-content *:not(kbd) {
+/* .book-content *:not(code), .book-content *:not(a), .book-content *:not(kbd) { */
+.book-content {
     //background-color: #F1E4D5;
     box-shadow: none;
     text-shadow: none;
     border-radius: unset;
-    color: #dcdcdc !important;
+    color: var(--bs-body-color);
 }
 
 .book-content :visited, .book-content :visited *, .book-content :visited *[class] {
@@ -143,6 +148,7 @@ export const BookPaperTheme = `
   background-color: var(--primary-color);
 }
 
+/*
 .reader-container.column-layout-2::before {
   content: "";
   position: absolute;
@@ -150,6 +156,12 @@ export const BookPaperTheme = `
   left: 50%;
   height: 100%;
   box-shadow: 0px 0px 34.38px 5px rgba(0, 0, 0, 0.43), 0px 0px 6.28px 2px rgba(0, 0, 0, 0.43), 0px 0px 15.7px 4px rgba(0, 0, 0, 0.43), 0px 0px 1.57px 0.3px rgba(0, 0, 0, 0.43);
+}
+*/
+
+kbd {
+  color: inherit !important;
+  background-color: inherit !important;
 }
 
 `;
